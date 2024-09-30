@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.green {
+    color: green;
+}
+
+#first {   
+    color: crimson;
+
+}
+.bigger {
+    font-size: 25pt;
+}
+
+.second {
+    color: chartreuse;
+}
+
+main .green{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h1 {
+    color: black
+}
+
+.dark {
+    background-color: rgb(160, 160, 230);
+}
