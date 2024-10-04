@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif
+    color #fff;
+    background: url('flower.jpeg') no-repeat; 
+}
+
+header {
+    background: url('background.jpg');
+
+}
+
+nav a {
+    color: green;
+}
+
+.current {
+    color: bisque;
+}
