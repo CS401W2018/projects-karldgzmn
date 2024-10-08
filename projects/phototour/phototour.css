@@ -1,0 +1,68 @@
+
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background: 
+        url('philippines.jpg') right top no-repeat,
+        url('background2.jpg');
+
+        
+
+    
+    
+}
+
+
+
+nav {
+    background-color: white;
+}
+
+nav a {
+    color: darkgreen;
+}
+
+
+.current {
+    color: darkgoldenrod;
+}
+
+.list {
+    list-style-image: url('location.jpg');
+}
+
+.manila {
+    width: 610px;
+    height: 400px;
+}
+
+.manila2 {
+    width: 610px;
+    height: 400px;
+}
+
+
+.palawan {
+    width: 610px;
+    height: 400px;
+}
+
+.palawan2 {
+    width: 610px;
+    height: 400px;
+}
+
+.boracay {
+    width: 610px;
+    height: 400px;
+}
+
+.bohol {
+    width: 610px;
+    height: 400px;
+}
+
+.banaue {
+    width: 610px;
+    height: 400px;
+}
