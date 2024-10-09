@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: blueviolet;
+    width: 70%;
+    margin: 30px auto;
+    padding: 50px 30px 100px 3px;
+}
+
+header h1 {
+    margin-bottom: 0;
+    border: 3px solid;
+}
+
+nav {
+    background-color: #AAA;
+    height: 200px;
+    margin-top: 40px;
+}
+
+figure {
+    border: thin solid #000;
+    width: 200px;
+}
+
+#wrapper {
+    width: 600px;
+    margin: 0 auto;
+    background-color: rgb(76, 110, 71);
+    border: thin solid black;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    border: solid white;
+}
