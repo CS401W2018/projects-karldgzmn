@@ -41,3 +41,8 @@ nav a {
     float: left;
     margin-left: 10px   ;
 }
+
+nav a:hover {
+    color: cadetblue;
+    background-color: white;
+}
