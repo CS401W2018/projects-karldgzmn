@@ -13,3 +13,26 @@ body {
     background-color: lightblue;
     border: thin solid #000;
 }
+.itemA{
+    grid-area: lside;
+}
+
+.itemB{
+    grid-area: rside;
+}
+
+.itemC{
+    grid-area: header;
+}
+
+.itemD{
+    grid-area: main;
+}
+
+.itemE{
+    grid-area: footer1;
+}
+
+.itemF{
+    grid-area: footer3;
+}
