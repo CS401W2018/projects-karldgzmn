@@ -1,0 +1,155 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 1em 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color:white;
+    color: gray;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    flex-grow: 1;
+}
+
+ul {
+    flex: 1;
+}
+aside {
+    flex: 1;
+    max-width: 25%;
+    padding: 1em;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+main {
+    flex: 3;
+    max-width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    max-width: calc(33.333% - 2em);
+    background-color: whitesmoke;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px rgb(160, 160, 160);
+    padding: 1em;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.resizeside {
+    width: 100%;
+}
+
+.resize {
+    width: 300px;
+    height: 200px;
+    
+}
+
+
+@media only screen and (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        border-bottom: thin solid white;
+        text-align: center;
+    }
+
+    nav a:hover {
+        background-color:white;
+        color: gray;
+        border-radius: 5px;
+    }
+    
+    .container {
+        flex-direction: column-reverse;
+    }
+    
+    main {
+        max-width: 100%;
+    }
+    
+    .card {
+        max-width: 100%;
+    }
+
+    .resize2 {
+        width: 300px;
+        height: 200px;
+    }
+    aside {
+        text-align: center;
+        max-width: 100%;
+        flex: 1
+    }
+    
+@media print {
+
+    header, footer, nav {
+        display: none;
+    }
+        
+    .container {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    aside, main {
+        max-width: 100%;
+        padding: 1em;
+    }
+
+    article {
+        border: none;
+    }
+
+}
+
+}
