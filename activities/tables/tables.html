@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="tables.css">
 </head>
 <body>
     <header>
-        <h1>My Class Schedule</h1>
+        <h1>Web Design</h1>
     </header>
-</body>
 <main>
-    <table border="1">
+    <table class = "schedule">
+        <caption>My Class Schedule</caption>
         <thead>
             <tr>
-                <th>Dept.</th><th>Number</th><th>Time</th><th>Location</th><th>Credits</th>
+                <th>Department</th><th>Number</th><th>Time</th><th>Location</th><th>Credits</th>
             </tr>
         </thead>
         <tbody>
@@ -31,7 +32,7 @@
             <td>CS</td><td>210</td><td>2PM</td><td>P1</td><td>3</td>
         </tr>
         <tr>
-            <td>CS</td><td>211</td><td>12AM</td><td>P1</td><td>3</td>
+            <td>CS</td><td>211</td><td>12AM</td><td>P2</td><td>3</td>
         </tr>
         </tbody>
         <tfoot>
@@ -41,5 +42,18 @@
         </tr>
         </tfoot>
     </table>
+<br>
+<hr>
+    <p> 1. Why don't we use the border property?</p>
+        <p>when we use border-box , the layout breaks inside the button</p>
+    <p>2. What is the easiest way to color every other row a different color?</p>
+        <p>.schedule tbody tr:nth-child(odd) {background-color: darkcyan;}</p>
+    <p>3. When should we use a table?</p>
+        <p>depends on you on what you want to make of it. YOu can use it as a class scheduler, some data. </p>
+
 </main>
+</body>
+<footer>
+    &copy; Karl De Guzman 2024
+</footer>
 </html>
