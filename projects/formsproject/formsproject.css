@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-image: url(boracay.jpg);
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    background-color: white;
+    padding: 20px;
+}
+
+
+header {
+    background-color:  rgb(50, 47, 47);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: rgb(50, 47, 47);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+main {
+    max-width: 600px;
+    margin: auto;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+fieldset {
+    border: 1px solid  rgb(50, 47, 47);
+    padding: 25px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+
+legend {
+    font-size: 1em;
+    font-weight: bold;
+    background-color: white;
+}
+
+
+.form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form label {
+    flex: 1;
+    min-width: 100px;
+}
+
+.form input,
+.form select,
+.form textarea {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"] {
+    flex: 0;
+    margin-right: 5px;
+}
+
+
+button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color:  rgb(50, 47, 47);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+
+input [type = "submit"] {
+    background-color: #ccc;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+input:not([type="submit"]):focus {
+    padding: 30px;
+    font-size: 1.2em;
+    border:0;
+}
+
+@media (max-width: 600px) {
+    .form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .form label {
+        margin-bottom: 5px;
+    }
+    
+    button {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}
