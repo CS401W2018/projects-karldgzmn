@@ -5,7 +5,9 @@
     box-sizing: border-box;
 }
 
-
+.answer {
+    background-color: white;
+}
 
 body {
     background-image: url(boracay.jpg);
@@ -115,7 +117,7 @@ input:not([type="submit"]):focus {
     border:0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1500px) {
     .form {
         flex-direction: column;
         align-items: flex-start;
