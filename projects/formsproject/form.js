@@ -12,7 +12,7 @@ document.getElementById('myForm').addEventListener('submit',function(event){
 
     if (isNaN(age) || age < 18 || age > 100) {
         alert("Age must be a number between 18 and 100.");
-        return;
+        return
     }
     
     
