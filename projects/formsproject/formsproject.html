@@ -9,7 +9,7 @@
 <body>
 
     <header>
-        <h1>Registration Form - Project</h1>
+        <h1>Project - Form Processing</h1>
     </header>
     <main>
         <div id="message"></div>
@@ -33,13 +33,13 @@
                 </div>
 
                 <div class="form">
-                    <label for="dob">Date of Birth:</label>
-                    <input type="date" id="dob" name="dob" >
+                    <label for="age">age:</label>
+                    <input type="number" id="age" name="age" >
                 </div>
 
                 <div class="form">
                     <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" placeholder="808-xxx-xxxx" name="phone" >
+                    <input type="tel" id="phone" placeholder="808-999-9999" name="phone" >
                 </div>
 
                 <div class="form">
@@ -54,13 +54,13 @@
                 </div>
 
                 <div class="form">
-                    <label for="age">Choose Age:</label>
-                    <select id="age" name="age" >
+                    <label for="time">Choose Time:</label>
+                    <select id="time" name="time" >
                         <option label=" "></option>
-                        <option value="0-18">0-18</option>
-                        <option value="19-30">19-30</option>
-                        <option value="31-60">31-60</option>
-                        <option value="60 and above">60 and above</option>
+                        <option value="0-18">8am - 10am</option>
+                        <option value="19-30">10am -12pm</option>
+                        <option value="31-60">12pm -2pm</option>
+                        <option value="60 and above">2pm onwards</option>
                     </select>
                 </div>
 
@@ -79,8 +79,4 @@
     <script src ="form.js"></script>
 
 </body>
-    <p class="answer"> 1. What is AJAX?</p>
-    stands for Asynchronous JavaScript and XML. Out of order.
-    <p class="answer"> 2. Why do you put your JS Code in a separate file?</p>
-    for reusability and keep it organize.
 </html>
