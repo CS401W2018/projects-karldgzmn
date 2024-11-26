@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #004085;
+    color: white;
+    padding: 1em 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #0069d9;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    flex-grow: 1;
+    
+}
+
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    max-width: calc(33.333% - 2em);
+    background-color: whitesmoke;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px rgb(160, 160, 160);
+    padding: 1em;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.sample {
+    flex: 3;
+    max-width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+}
+
+.something {
+    text-align: center;
+    padding: 2em;
+    background-color: #e9ecef;
+}
+
+.something h1 {
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+    color: #004085;
+}
+
+.dota2 {
+    width: 100%;
+    height: auto;
+
+}
+
+
+#players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 2em;
+}
+
+.player {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.player:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.player img {
+    width: 100%;
+    height: auto;
+
+}
+
+.player h2 {
+    margin: 1em 0 0.5em;
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+}
+
+ul li span {
+    font-weight: bold;
+    color: #0069d9;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    padding: 1em 0;
+    font-size: 0.9em;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #intro {
+        padding: 1em;
+    }
+}
