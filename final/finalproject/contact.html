@@ -10,7 +10,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="department.html">Home</a></li>
                 <li><a href="teams.html">Teams</a></li>
                 <li><a href="players.html">Players</a></li>
                 <li><a href="tournaments.html">Tournaments</a></li>
@@ -19,27 +19,75 @@
             </ul>
         </nav>
     </header>
+   
+        <h1>Project - Form Processing</h1>
+        
     <main>
-        <h1>Contact Us</h1>
-        <p>Have questions or feedback about our Dota 2 Universe website? Feel free to reach out to us using the form below!</p>
-        <form action="process-form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-            
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject of Your Message" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Your Message Here" required></textarea>
-            
-            <button type="submit">Send Message</button>
+        <div id="message"></div>
+        <form action="processing.html" method="post" id = "myForm">
+            <fieldset>
+                <legend>Personal Information </legend>
+                
+                <div class="form">
+                    <label for="first"> Name: </label> 
+                    <input type="text" id="first" name="first" placeholder="Enter Your Name">
+                </div>
+
+                <div class="form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="example@something.com" name="email" >
+                </div>
+
+                <div class="form">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="*********" name="password" >
+                </div>
+
+                <div class="form">
+                    <label for="age">age:</label>
+                    <input type="number" id="age" name="age" >
+                </div>
+
+                <div class="form">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" placeholder="808-999-9999" name="phone" >
+                </div>
+
+                <div class="form">
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" rows="4" ></textarea>
+                </div>
+
+                <div class="form">
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+
+                <div class="form">
+                    <label for="time">Choose Time:</label>
+                    <select id="time" name="time" >
+                        <option label=" "></option>
+                        <option value="0-18">8am - 10am</option>
+                        <option value="19-30">10am -12pm</option>
+                        <option value="31-60">12pm -2pm</option>
+                        <option value="60 and above">2pm onwards</option>
+                    </select>
+                </div>
+
+                <div class="form">
+                    <label><input type="checkbox" name="terms" > All the information above is correct.</label>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </fieldset>
         </form>
     </main>
+
     <footer>
         <p>&copy; 2024 Karl De Guzman</p>
     </footer>
+    <script src ="form.js"></script>
+
 </body>
 </html>
