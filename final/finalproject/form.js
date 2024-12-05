@@ -9,13 +9,7 @@ document.getElementById('myForm').addEventListener('submit',function(event){
         alert("You need a first name, an email and a password!!! Fix this error.");
         return
     }
-
-    if (isNaN(age) || age < 18 || age > 100) {
-        alert("Age must be a number between 18 and 100.");
-        return
-    }
-    
-    
+       
     const formData = {
         first: first,
         email: email,
